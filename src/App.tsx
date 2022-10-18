@@ -1,8 +1,9 @@
+import Hello from "./components/Hello";
 function App() {
   return (
-    <div>
-     HELLO WORLD!
-    </div>
+ <div>
+  <Hello></Hello>
+ </div>
   );
 }
 
