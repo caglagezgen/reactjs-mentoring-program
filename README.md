@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# Movies Client React App (netflixroulette)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
