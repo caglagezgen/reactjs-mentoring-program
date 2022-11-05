@@ -1,0 +1,47 @@
+.filter{
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #555555;
+}
+
+.filter__genres{
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filter__genre{
+  background-color: transparent;
+  text-transform: uppercase;
+  color: white;
+  border: none;
+  padding: 1rem 0;
+}
+
+.filter__genre--active{
+  border-bottom: 1px solid #f65261;
+  margin-bottom: -1px;
+}
+
+.filter__sort{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.filter__sort-tag{
+  font-weight: normal;
+  color: #555555;
+}
+
+.filter__sort-btn{
+  text-transform: uppercase;
+  background-color: transparent;
+  border: transparent;
+  color: white;
+  pad: 1rem 0;
+}
+
+

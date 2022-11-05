@@ -1,0 +1,25 @@
+.search-form {
+  display: flex;
+  gap: 1rem;
+}
+
+.search-form__input {
+  flex: 1;
+  font-size: 1.25rem;
+  padding: 0 1rem;
+  color: #555555;
+  background-color: rgba(35, 35, 35, 0.7);
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.search-form__submit {
+  color: white;
+  border: none;
+  background-color: #f65261;
+  font-size: 1.25rem;
+  padding: 1rem 3rem;
+  border-radius: 0.25rem;
+  text-transform: uppercase;
+  font-weight: normal;
+}

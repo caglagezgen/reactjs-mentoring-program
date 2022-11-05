@@ -1,17 +1,11 @@
-import Counter from "./components/Counter";
-import Hello from "./components/Hello";
-import SearchForm from "./components/Search/SearchForm";
-function App() {
+import Home from "./pages/Home";
+
+const App: React.FC = () => {
   return (
- <div>
-  <Hello></Hello>
-  <Counter></Counter>
-  <div>
-  <SearchForm></SearchForm>
-  </div>
- 
- </div>
+    <div>
+      <Home />
+    </div>
   );
-}
+};
 
 export default App;
