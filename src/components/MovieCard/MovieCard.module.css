@@ -1,0 +1,30 @@
+.card {
+  font-size: 0.75rem;
+  color: white;
+}
+
+.card__img {
+  height: 22rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.card__content {
+  margin: 0.5rem 0 0 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.card__year {
+  border: 1px solid #555555;
+  color: #555555;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.card__genre {
+  color: #555555;
+  padding: 0;
+  margin: 0;
+}
