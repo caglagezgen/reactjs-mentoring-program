@@ -1,6 +1,7 @@
 .card {
   font-size: 0.75rem;
   color: white;
+  position: relative;
 }
 
 .card__img {
@@ -27,4 +28,21 @@
   color: #555555;
   padding: 0;
   margin: 0;
+}
+
+.cardMenu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: white;
+}
+
+.card:hover .cardMenu {
+  display: block;
+}
+
+.menuContainer {
+  display: flex;
+  flex-direction: column;
 }

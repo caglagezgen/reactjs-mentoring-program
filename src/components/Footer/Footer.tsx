@@ -1,4 +1,4 @@
-import Brand from "../Brand/Brand";
+import Brand from "../Logo/Logo";
 import classes from "./Footer.module.css";
 
 const Footer: React.FC = () => {
