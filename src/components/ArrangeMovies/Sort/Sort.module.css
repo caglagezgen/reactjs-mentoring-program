@@ -1,0 +1,10 @@
+.filter__sort {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.filter__sort-tag {
+  font-weight: normal;
+  color: #555555;
+}

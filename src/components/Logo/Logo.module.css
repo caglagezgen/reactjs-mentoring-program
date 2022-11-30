@@ -1,14 +1,14 @@
-.brand{
+.logo{
   color: #f65261;
   background-color: transparent;
   border: none;
   font-size: 1.25rem;
 }
 
-.brand--left {
+.logo--left {
   font-weight: bolder;
 }
 
-.brand--right {
+.logo--right {
   font-weight: lighter;
 }

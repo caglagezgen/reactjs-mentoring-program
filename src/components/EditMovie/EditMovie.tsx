@@ -1,8 +1,8 @@
 import { useState } from "react";
 import Modal from "../Modal/Modal";
-import classes from "./AddMovie.module.css";
+import classes from "./EditMovie.module.css";
 
-const AddMovie: React.FC = () => {
+const EditMovie: React.FC = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const toggle = () => setIsModalOpen(!isModalOpen);
@@ -10,9 +10,9 @@ const AddMovie: React.FC = () => {
   return (
     <>
       <button className={classes.btn} onClick={() => toggle()}>
-        + Add Movie
+        Edit
       </button>
-      <Modal isVisible={isModalOpen} close={toggle} title="Add Movie">
+      <Modal isVisible={isModalOpen} close={toggle} title="Edit Movie">
         <form>
           <p>
             <label htmlFor="movieTitle">Title</label>
@@ -55,4 +55,4 @@ const AddMovie: React.FC = () => {
   );
 };
 
-export default AddMovie;
+export default EditMovie;
