@@ -1,0 +1,31 @@
+.movieDetail {
+    display: flex;
+    gap: 2rem;
+    color:white;
+    background-color: #232323;
+    margin: 1rem -3rem 0 -3rem;
+  
+  }
+  
+  .moviePoster {
+    width: 16rem;
+  }
+  
+  .movieTitle {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+  }
+  
+  .movieGenres {
+    font-size: 0.75rem;
+    color: #555555;
+  }
+  
+  .meta {
+    color: #f65261;
+  }
+  
+  .runtime {
+    margin-left: 4rem;
+  }
