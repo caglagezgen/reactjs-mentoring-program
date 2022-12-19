@@ -1,0 +1,22 @@
+@font-face {
+    font-family: Netflix;
+    src: url('/src/assets/fonts/netflix/netflix-sans-light.woff2') format('woff2');
+    font-weight: 100;
+}
+
+@font-face {
+    font-family: Netflix;
+    src: url('/src/assets/fonts/netflix/netflix-sans-medium.woff2') format('woff2');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: Netflix;
+    src: url('/src/assets/fonts/netflix/netflix-sans-bold.woff2') format('woff2');
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: Montserrat;
+    src: url('/src/assets/fonts/montserrat/montserrat.woff2') format('woff2');
+}
