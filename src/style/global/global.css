@@ -1,0 +1,26 @@
+html,
+body,
+#root {
+    height: 100%;
+}
+
+body {
+    font: 16px Netflix, Arial, sans-serif;
+    overflow-y: scroll;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+*::selection {
+    background: #f6526180;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
