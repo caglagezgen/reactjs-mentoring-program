@@ -1,3 +1,4 @@
+/* eslint-disable no-return-assign */
 import cN from 'classnames';
 import ROUTES from '@app/routes';
 import { Link } from 'react-router-dom';

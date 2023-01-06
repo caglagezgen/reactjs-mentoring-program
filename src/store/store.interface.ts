@@ -34,7 +34,6 @@ export enum StoreModule {
   search = 'search',
 }
 
-
 export enum ActionType {
   addMovie = '/movies/add',
   deleteMovie = '/movies/delete',
