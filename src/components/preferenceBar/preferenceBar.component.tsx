@@ -34,6 +34,10 @@ const PreferenceBar: FC = () => {
     );
   };
 
+  if (chosenGenre !== search.genre) {
+    setGenre(search.genre);
+  }
+
   return (
     <div className={s.preferenceBarContainer}>
       <div className={s.preferenceContainer}>

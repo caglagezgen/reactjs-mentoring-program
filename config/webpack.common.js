@@ -12,7 +12,8 @@ module.exports = {
   entry: './src/index.tsx',
   output: {
     filename: '[name].bundle.js',
-    path: path.join(__dirname, ouputPath)
+    path: path.resolve(__dirname, ouputPath),
+    publicPath: '/',
   },
   resolve: {
     extensions: [
@@ -47,7 +48,7 @@ module.exports = {
     rules: [
       {
         test: /\.(ts|tsx)$/,
-        loader: "awesome-typescript-loader",
+        loader: 'awesome-typescript-loader',
       },
       {
         test: /\.m?(js|jsx)$/,

@@ -1,4 +1,6 @@
 import cN from 'classnames';
+import ROUTES from '@app/routes';
+import { Link } from 'react-router-dom';
 import React, { useState, FC, useContext } from 'react';
 import { NO_IMAGE_PATH } from '@shared/interfaces/movies.model';
 import { ModalType } from '@shared/interfaces/coreModal.interface';
@@ -6,30 +8,26 @@ import { ModalContext } from '@shared/interfaces/coreModal.context';
 import useStyle from '@app/components/movieItem/movieItem.component.style';
 import { IMovieItem } from '@app/components/movieItem/movieItem.interface';
 
-const MovieItem: FC<IMovieItem> = ({ movie, onMovieImageClick }) => {
+const MovieItem: FC<IMovieItem> = ({ movie }) => {
   const s = useStyle();
   const [isMovieMenuOpened, setMovieMenuState] = useState(false);
   const { setChosenModal } = useContext(ModalContext);
-
-  const onImageClick = () => {
-    onMovieImageClick();
-    setMovieMenuState(false);
-  };
 
   return (
     <figure
       className={s.movieContainer}
       onMouseLeave={() => setMovieMenuState(false)}
     >
-      <img
-        src={movie.imagePath}
-        alt={movie.title}
-        // eslint-disable-next-line no-return-assign
-        onError={(e) => (e.target as HTMLImageElement).src = NO_IMAGE_PATH}
-        height="490px"
-        width="320px"
-        onClick={onImageClick}
-      />
+      <Link to={`${ROUTES.MOVIE_DETAILS}${movie.id}`}>
+        <img
+          src={movie.imagePath}
+          alt={movie.title}
+          onError={(e) => (e.target as HTMLImageElement).src = NO_IMAGE_PATH}
+          height="490px"
+          width="320px"
+          onClick={() => setMovieMenuState(false)}
+        />
+      </Link>
       <figcaption className={s.movieInfoContainer}>
         <div>
           <h3 className={s.title}>{movie.title}</h3>

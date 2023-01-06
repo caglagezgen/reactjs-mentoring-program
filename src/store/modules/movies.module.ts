@@ -3,7 +3,7 @@ import handleError from '@app/utils/handleError';
 import { IMovie } from '@shared/interfaces/movies.model';
 import ISearchQueryParams from '@server/services/movies.service.interface';
 import {
-  IState, IEvents, API_URL, ActionType,
+  IState, IEvents, API_URL, ActionType, DEFAULT_SEARCH_STATE,
 } from '@app/store/store.interface';
 
 const moviesModule: StoreonModule<IState, IEvents> = (store) => {
@@ -87,7 +87,7 @@ const moviesModule: StoreonModule<IState, IEvents> = (store) => {
     const queryParams = Object
       .entries(params)
       // eslint-disable-next-line @typescript-eslint/no-unused-vars
-      .filter(([key, value]) => Boolean(value))
+      .filter(([key, value]) => Boolean(value) && typeof value !== 'object')
       .map(([key, value]) => `${key}=${value}`)
       .join('&');
 
@@ -102,8 +102,41 @@ const moviesModule: StoreonModule<IState, IEvents> = (store) => {
       handleError(e);
     }
 
-    store.dispatch(ActionType.saveMovie, { movies, params });
+    store.dispatch(ActionType.saveMovie, { movies, params: { ...params, chosenMovie: null } });
   });
+
+  store.on(ActionType.getMovieDetails, async (state: IState, id: string) => {
+    let movie: IMovie;
+
+    if (state.search.chosenMovie?.id === Number(id)) {
+      return;
+    }
+
+    try {
+      const response: Response = await fetch(
+        `${API_URL}/movie/${id}`,
+      );
+
+      movie = await response.json();
+    } catch (e) {
+      movie = null;
+    }
+
+    const movies = state.movies.length
+      ? state.movies
+      : [movie];
+
+    store.dispatch(
+      ActionType.saveMovie,
+      { movies, params: { ...state.search, chosenMovie: movie } },
+    );
+  });
+
+  store.on(ActionType.removeChosenMovie, (state: IState) => (
+    { ...state, search: { ...state.search, chosenMovie: null } }
+  ));
+
+  store.on(ActionType.resetState, () => ({ movies: [], search: DEFAULT_SEARCH_STATE }));
 
   store.on(ActionType.saveMovie, (state: IState, { movies, params = state.search }) => ({
     ...state,

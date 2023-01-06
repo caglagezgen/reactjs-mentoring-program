@@ -16,6 +16,19 @@ const focus = {
   color: white,
 };
 
+const reset = {
+  backgroundColor: gray.tint4,
+  borderColor: peachy,
+  color: peachy,
+  width: sizes.mediumWidth,
+
+  '&:focus': focus,
+  '&:hover': {
+    backgroundColor: peachy,
+    color: white,
+  },
+};
+
 const peachyButtonStyles = {
   backgroundColor: gray.tint3,
   borderColor: gray.tint1,
@@ -61,6 +74,10 @@ const style = createUseStyles({
       color: white,
     },
   },
+  backToHome: {
+    ...reset,
+    width: '270px',
+  },
   confirm: peachyButtonStyles,
   search: {
     backgroundColor: peachy,
@@ -73,18 +90,7 @@ const style = createUseStyles({
       color: peachy,
     },
   },
-  reset: {
-    backgroundColor: gray.tint4,
-    borderColor: peachy,
-    color: peachy,
-    width: sizes.mediumWidth,
-
-    '&:focus': focus,
-    '&:hover': {
-      backgroundColor: peachy,
-      color: white,
-    },
-  },
+  reset,
   submit: peachyButtonStyles,
 });
 
