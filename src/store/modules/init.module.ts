@@ -5,11 +5,18 @@ import {
 
 const initModule: StoreonModule<IState, IEvents> = (store) => {
   store.on('@init', () => {
-    store.dispatch(ActionType.getMovies, DEFAULT_SEARCH_STATE);
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars, no-useless-escape
+    const [match, text] = window.location.pathname.match('search\/(.*)$') || [];
+    const search = text
+      ? { ...DEFAULT_SEARCH_STATE, text }
+      : DEFAULT_SEARCH_STATE;
 
+    if (text) {
+      store.dispatch(ActionType.getMovies, search);
+    }
     return {
       movies: [],
-      search: DEFAULT_SEARCH_STATE,
+      search,
     };
   });
 };

@@ -1,5 +1,6 @@
 export enum ButtonType {
   add = 'add',
+  backToHome = 'backToHome',
   confirm = 'confirm',
   reset = 'reset',
   search = 'search',
@@ -8,6 +9,7 @@ export enum ButtonType {
 
 export const BUTTON_TEXT = {
   add: '+ add movie',
+  backToHome: 'go back to home',
   confirm: ButtonType.confirm,
   reset: ButtonType.reset,
   search: ButtonType.search,
@@ -16,6 +18,6 @@ export const BUTTON_TEXT = {
 
 export interface IButton {
   type: ButtonType,
-  onButtonClick: () => void,
+  onButtonClick?: () => void,
   isDisabled?: boolean,
 }

@@ -15,6 +15,7 @@ export interface IState {
     size: number,
     sortBy: IMovieSortOptions,
     text: string,
+    chosenMovie: IMovie
   };
 }
 
@@ -25,6 +26,7 @@ export const DEFAULT_SEARCH_STATE = {
   size: undefined as number,
   sortBy: IMovieSortOptions.title,
   text: '',
+  chosenMovie: undefined as IMovie,
 };
 
 export enum StoreModule {
@@ -38,6 +40,9 @@ export enum ActionType {
   editMovie = '/movies/edit',
   getMovies = '/movies/get',
   saveMovie = '/movies/save',
+  getMovieDetails = '/movies/getMovieDetails',
+  removeChosenMovie = '/movies/removeChosenMovie',
+  resetState = '/movies/resetState'
 }
 
 export interface IEvents {
@@ -47,4 +52,7 @@ export interface IEvents {
   [ActionType.getMovies]: ISearchQueryParams;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   [ActionType.saveMovie]: { movies: Array<IMovie>, params?: any };
+  [ActionType.getMovieDetails]: string;
+  [ActionType.removeChosenMovie]: void;
+  [ActionType.resetState]: void;
 }

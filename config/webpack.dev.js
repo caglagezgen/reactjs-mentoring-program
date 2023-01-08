@@ -10,7 +10,8 @@ const developmentConfiguration = {
     compress: true,
     port: 4200,
     hot: true,
-    open: true
+    open: true,
+    historyApiFallback: true,
   },
   devtool: 'source-map',
   plugins: [

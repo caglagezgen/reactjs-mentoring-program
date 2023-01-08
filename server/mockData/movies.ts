@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-restricted-imports
 import { Genres, IMovie } from '../../shared/interfaces/movies.model';
 
 const movies: Array<IMovie> = [
@@ -548,37 +549,37 @@ const movies: Array<IMovie> = [
   },
   {
     id: 122917,
-    title: "The Hobbit: The Battle of the Five Armies",
+    title: 'The Hobbit: The Battle of the Five Armies',
     rating: 7.2,
-    releaseDate: "2014-12-10",
+    releaseDate: '2014-12-10',
     imagePath: "https://image.tmdb.org/t/p/w500/9zRzFJuaj0CHIOhAkcCcFTvyu2X.jpg",
     url: "https://image.tmdb.org/t/p/w500/9zRzFJuaj0CHIOhAkcCcFTvyu2X.jpg",
     description: "Immediately after the events of The Desolation of Smaug, Bilbo and the dwarves try to defend Erebor's mountain of treasure from others who claim it: the men of the ruined Laketown and the elves of Mirkwood. Meanwhile an army of Orcs led by Azog the Defiler is marching on Erebor, fueled by the rise of the dark lord Sauron. Dwarves, elves and men must unite, and the hope for Middle-Earth falls into Bilbo's hands.",
     genre: [
-      Genres.Drama
+      Genres.Drama,
     ],
-    duration: 144
+    duration: 144,
   },
   {
     id: 209112,
-    title: "Batman v Superman: Dawn of Justice",
+    title: 'Batman v Superman: Dawn of Justice',
     rating: 5.8,
-    releaseDate: "2016-03-23",
-    imagePath: "https://image.tmdb.org/t/p/w500/cGOPbv9wA5gEejkUN892JrveARt.jpg",
-    url: "https://image.tmdb.org/t/p/w500/cGOPbv9wA5gEejkUN892JrveARt.jpg",
-    description: "Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before.",
+    releaseDate: '2016-03-23',
+    imagePath: 'https://image.tmdb.org/t/p/w500/cGOPbv9wA5gEejkUN892JrveARt.jpg',
+    url: 'https://image.tmdb.org/t/p/w500/cGOPbv9wA5gEejkUN892JrveARt.jpg',
+    description: 'Fearing the actions of a god-like Super Hero left unchecked, Gotham City’s own formidable, forceful vigilante takes on Metropolis’s most revered, modern-day savior, while the world wrestles with what sort of hero it really needs. And with Batman and Superman at war with one another, a new threat quickly arises, putting mankind in greater danger than it’s ever known before.',
     genre: [
-      Genres.Drama
+      Genres.Drama,
     ],
-    duration: 151
+    duration: 151,
   },
   {
     id: 499772,
-    title: "Meet Me In St. Gallen",
+    title: 'Meet Me In St. Gallen',
     rating: 4.9,
-    releaseDate: "2018-02-07",
-    imagePath: "https://image.tmdb.org/t/p/w500/uGntNjUx6YAzbVy7RDgxWnWsdet.jpg",
-    url: "https://image.tmdb.org/t/p/w500/uGntNjUx6YAzbVy7RDgxWnWsdet.jpg",
+    releaseDate: '2018-02-07',
+    imagePath: 'https://image.tmdb.org/t/p/w500/uGntNjUx6YAzbVy7RDgxWnWsdet.jpg',
+    url: 'https://image.tmdb.org/t/p/w500/uGntNjUx6YAzbVy7RDgxWnWsdet.jpg',
     description: "The story of Jesse and Celeste who meets at an unexpected time in their lives. They then realize their names are the same as the characters in the popular break-up romantic comedy, Celeste and Jesse Forever.",
     genre: [
       Genres.Drama
@@ -618,7 +619,7 @@ const movies: Array<IMovie> = [
     releaseDate: "2017-12-25",
     imagePath: "https://image.tmdb.org/t/p/w500/6jsqmMgR75VYC9AM6eToMJh3RxF.jpg",
     url: "https://image.tmdb.org/t/p/w500/6jsqmMgR75VYC9AM6eToMJh3RxF.jpg",
-    description: "In the glamour of 1950s post-war London, renowned dressmaker Reynolds Woodcock and his sister Cyril are at the center of British fashion. Women come and go through Woodcock’s life, providing the confirmed bachelor with inspiration and companionship, until he comes across a young, strong-willed woman, Alma, who soon becomes a fixture in his life as his muse and lover. Once controlled and planned, he finds his carefully tailored life disrupted by love.",
+    description: 'In the glamour of 1950s post-war London, renowned dressmaker Reynolds Woodcock and his sister Cyril are at the center of British fashion. Women come and go through Woodcock’s life, providing the confirmed bachelor with inspiration and companionship, until he comes across a young, strong-willed woman, Alma, who soon becomes a fixture in his life as his muse and lover. Once controlled and planned, he finds his carefully tailored life disrupted by love.',
     genre: [
       Genres.Drama
     ],
@@ -655,8 +656,8 @@ const movies: Array<IMovie> = [
     title: "Thor: The Dark World",
     rating: 6.7,
     releaseDate: "2013-10-29",
-    imagePath: "https://image.tmdb.org/t/p/w500/bnX5PqAdQZRXSw3aX3DutDcdso5.jpg",
-    url: "https://image.tmdb.org/t/p/w500/bnX5PqAdQZRXSw3aX3DutDcdso5.jpg",
+    imagePath: 'https://image.tmdb.org/t/p/w500/bnX5PqAdQZRXSw3aX3DutDcdso5.jpg',
+    url: 'https://image.tmdb.org/t/p/w500/bnX5PqAdQZRXSw3aX3DutDcdso5.jpg',
     description: "Thor fights to restore order across the cosmos… but an ancient race led by the vengeful Malekith returns to plunge the universe back into darkness. Faced with an enemy that even Odin and Asgard cannot withstand, Thor must embark on his most perilous and personal journey yet, one that will reunite him with Jane Foster and force him to sacrifice everything to save us all.",
     genre: [
       Genres.Drama
@@ -769,42 +770,42 @@ const movies: Array<IMovie> = [
   },
   {
     id: 119450,
-    title: "Dawn of the Planet of the Apes",
+    title: 'Dawn of the Planet of the Apes',
     rating: 7.2,
-    releaseDate: "2014-06-26",
-    imagePath: "https://image.tmdb.org/t/p/w500/qL0w9X1dVT3dnkZg3SrYtPFUHMs.jpg",
-    url: "https://image.tmdb.org/t/p/w500/qL0w9X1dVT3dnkZg3SrYtPFUHMs.jpg",
-    description: "A group of scientists in San Francisco struggle to stay alive in the aftermath of a plague that is wiping out humanity, while Caesar tries to maintain dominance over his community of intelligent apes.",
+    releaseDate: '2014-06-26',
+    imagePath: 'https://image.tmdb.org/t/p/w500/qL0w9X1dVT3dnkZg3SrYtPFUHMs.jpg',
+    url: 'https://image.tmdb.org/t/p/w500/qL0w9X1dVT3dnkZg3SrYtPFUHMs.jpg',
+    description: 'A group of scientists in San Francisco struggle to stay alive in the aftermath of a plague that is wiping out humanity, while Caesar tries to maintain dominance over his community of intelligent apes.',
     genre: [
-      Genres.Horror
+      Genres.Horror,
     ],
-    duration: 130
+    duration: 130,
   },
   {
     id: 76757,
-    title: "Jupiter Ascending",
+    title: 'Jupiter Ascending',
     rating: 5.2,
-    releaseDate: "2015-02-04",
-    imagePath: "https://image.tmdb.org/t/p/w500/aMEsvTUklw0uZ3gk3Q6lAj6302a.jpg",
-    url: "https://image.tmdb.org/t/p/w500/aMEsvTUklw0uZ3gk3Q6lAj6302a.jpg",
-    description: "In a universe where human genetic material is the most precious commodity, an impoverished young Earth woman becomes the key to strategic maneuvers and internal strife within a powerful dynasty…",
+    releaseDate: '2015-02-04',
+    imagePath: 'https://image.tmdb.org/t/p/w500/aMEsvTUklw0uZ3gk3Q6lAj6302a.jpg',
+    url: 'https://image.tmdb.org/t/p/w500/aMEsvTUklw0uZ3gk3Q6lAj6302a.jpg',
+    description: 'In a universe where human genetic material is the most precious commodity, an impoverished young Earth woman becomes the key to strategic maneuvers and internal strife within a powerful dynasty…',
     genre: [
-      Genres.Drama
+      Genres.Drama,
     ],
-    duration: 124
+    duration: 124,
   },
   {
     id: 166426,
-    title: "Pirates of the Caribbean: Dead Men Tell No Tales",
+    title: 'Pirates of the Caribbean: Dead Men Tell No Tales',
     rating: 6.5,
-    releaseDate: "2017-05-23",
-    imagePath: "https://image.tmdb.org/t/p/w500/xbpSDU3p7YUGlu9Mr6Egg2Vweto.jpg",
-    url: "https://image.tmdb.org/t/p/w500/xbpSDU3p7YUGlu9Mr6Egg2Vweto.jpg",
+    releaseDate: '2017-05-23',
+    imagePath: 'https://image.tmdb.org/t/p/w500/xbpSDU3p7YUGlu9Mr6Egg2Vweto.jpg',
+    url: 'https://image.tmdb.org/t/p/w500/xbpSDU3p7YUGlu9Mr6Egg2Vweto.jpg',
     description: "Thrust into an all-new adventure, a down-on-his-luck Capt. Jack Sparrow feels the winds of ill-fortune blowing even more strongly when deadly ghost sailors led by his old nemesis, the evil Capt. Salazar, escape from the Devil's Triangle. Jack's only hope of survival lies in seeking out the legendary Trident of Poseidon, but to find it, he must forge an uneasy alliance with a brilliant and beautiful astronomer and a headstrong young man in the British navy.",
     genre: [
-      Genres.Comedy
+      Genres.Comedy,
     ],
-    duration: 129
+    duration: 129,
   },
   {
     id: 271110,
@@ -834,22 +835,22 @@ const movies: Array<IMovie> = [
   },
   {
     id: 392044,
-    title: "Murder on the Orient Express",
+    title: 'Murder on the Orient Express',
     rating: 6.7,
-    releaseDate: "2017-11-03",
-    imagePath: "https://image.tmdb.org/t/p/w500/iBlfxlw8qwtUS0R8YjIU7JtM6LM.jpg",
-    url: "https://image.tmdb.org/t/p/w500/iBlfxlw8qwtUS0R8YjIU7JtM6LM.jpg",
-    description: "Genius Belgian detective Hercule Poirot investigates the murder of an American tycoon aboard the Orient Express train.",
+    releaseDate: '2017-11-03',
+    imagePath: 'https://image.tmdb.org/t/p/w500/iBlfxlw8qwtUS0R8YjIU7JtM6LM.jpg',
+    url: 'https://image.tmdb.org/t/p/w500/iBlfxlw8qwtUS0R8YjIU7JtM6LM.jpg',
+    description: 'Genius Belgian detective Hercule Poirot investigates the murder of an American tycoon aboard the Orient Express train.',
     genre: [
-      Genres.Drama
+      Genres.Drama,
     ],
-    duration: 114
+    duration: 114,
   },
   {
     id: 316029,
-    title: "The Greatest Showman",
+    title: 'The Greatest Showman',
     rating: 8,
-    releaseDate: "2017-12-20",
+    releaseDate: '2017-12-20',
     imagePath: "https://image.tmdb.org/t/p/w500/dfhztJRiElqmYW4kpvjYe1gENsD.jpg",
     url: "https://image.tmdb.org/t/p/w500/dfhztJRiElqmYW4kpvjYe1gENsD.jpg",
     description: "The story of American showman P.T. Barnum, founder of the circus that became the famous traveling Ringling Bros. and Barnum & Bailey Circus.",
@@ -924,22 +925,22 @@ const movies: Array<IMovie> = [
   },
   {
     id: 299536,
-    title: "Avengers: Infinity War",
-    rating: 0,
-    releaseDate: "2018-04-25",
-    imagePath: "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
-    url: "https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg",
-    description: "As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.",
+    title: 'Avengers: Infinity War',
+    rating: 9,
+    releaseDate: '2018-04-25',
+    imagePath: 'https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg',
+    url: 'https://image.tmdb.org/t/p/w500/7WsyChQLEftFiDOVTGkv3hFpyyt.jpg',
+    description: 'As the Avengers and their allies have continued to protect the world from threats too large for any one hero to handle, a new danger has emerged from the cosmic shadows: Thanos. A despot of intergalactic infamy, his goal is to collect all six Infinity Stones, artifacts of unimaginable power, and use them to inflict his twisted will on all of reality. Everything the Avengers have fought for has led up to this moment - the fate of Earth and existence itself has never been more uncertain.',
     genre: [
-      Genres.Drama
+      Genres.Drama,
     ],
     duration: 156
   },
   {
     id: 8966,
-    title: "Twilight",
+    title: 'Twilight',
     rating: 5.8,
-    releaseDate: "2008-11-20",
+    releaseDate: '2008-11-20',
     imagePath: "https://image.tmdb.org/t/p/w500/nlvPMLCdum7bkHKmDSMnNLGztmW.jpg",
     url: "https://image.tmdb.org/t/p/w500/nlvPMLCdum7bkHKmDSMnNLGztmW.jpg",
     description: "When Bella Swan moves to a small town in the Pacific Northwest to live with her father, she starts school and meets the reclusive Edward Cullen, a mysterious classmate who reveals himself to be a 108-year-old vampire. Despite Edward's repeated cautions, Bella can't help but fall in love with him, a fatal move that endangers her own life when a coven of bloodsuckers try to challenge the Cullen clan.",
@@ -976,16 +977,16 @@ const movies: Array<IMovie> = [
   },
   {
     id: 198184,
-    title: "Chappie",
+    title: 'Chappie',
     rating: 6.7,
-    releaseDate: "2015-03-04",
-    imagePath: "https://image.tmdb.org/t/p/w500/saF3HtAduvrP9ytXDxSnQJP3oqx.jpg",
-    url: "https://image.tmdb.org/t/p/w500/saF3HtAduvrP9ytXDxSnQJP3oqx.jpg",
+    releaseDate: '2015-03-04',
+    imagePath: 'https://image.tmdb.org/t/p/w500/saF3HtAduvrP9ytXDxSnQJP3oqx.jpg',
+    url: 'https://image.tmdb.org/t/p/w500/saF3HtAduvrP9ytXDxSnQJP3oqx.jpg',
     description: "Every child comes into the world full of promise, and none more so than Chappie: he is gifted, special, a prodigy. Like any child, Chappie will come under the influence of his surroundings—some good, some bad—and he will rely on his heart and soul to find his way in the world and become his own man. But there's one thing that makes Chappie different from any one else: he is a robot.",
     genre: [
-      Genres.Drama
+      Genres.Drama,
     ],
-    duration: 120
+    duration: 120,
   },
   {
     id: 102899,

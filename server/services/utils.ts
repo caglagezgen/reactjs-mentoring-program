@@ -11,37 +11,38 @@ function getFilteredMovies(
   { genre, offset, orderBy, sortBy, size, text }: ISearchQueryParams
 ): Array<IMovie> {
   const filteredMoviesByGenre = getFilteredMoviesByGenre(movies, genre);
-  const filteredMoviesByText = getFilteredMoviesByText(filteredMoviesByGenre, text);
+  const filteredMoviesByText = getFilteredMoviesByText(filteredMoviesByGenre, text?.toLowerCase());
   const sortedMoviesByOption = getSortedMoviesByOption(filteredMoviesByText, sortBy);
   const orderedMoviesByDirection = getOrderedMoviesByDirection(sortedMoviesByOption, orderBy);
   const partialMovies = getPartialMovies(orderedMoviesByDirection, offset, size);
-  
+
   return partialMovies;
 }
 
 function getFilteredMoviesByGenre(
   movies: Array<IMovie>,
-  chosenGenre: Genres
+  chosenGenre: Genres,
 ): Array<IMovie> {
   const genre = getGenresEnumValue(chosenGenre);
 
   return genre === Genres.All
     ? movies
-    : movies.filter(m => m.genre.includes(genre));
+    : movies.filter((m) => m.genre.includes(genre));
 }
 
 function getFilteredMoviesByText(
   movies: Array<IMovie>,
-  text: string
+  text: string,
 ): Array<IMovie> {
   return text
-    ? movies.filter(m => m.description.includes(text) || m.title.includes(text))
-    : movies;
+    ? movies.filter((m) => m.description.toLowerCase().includes(text)
+    || m.title.toLowerCase().includes(text))
+    : [];
 }
 
 function getSortedMoviesByOption(
   movies: Array<IMovie>,
-  option: IMovieSortOptions
+  option: IMovieSortOptions,
 ): Array<IMovie> {
   return option
     ? movies.sort((a, b) => (a[option] > b[option] ? 1 : -1))
@@ -60,7 +61,7 @@ function getOrderedMoviesByDirection(
 function getPartialMovies(
   movies: Array<IMovie>,
   offset: string | number = 0,
-  size: string | number
+  size: string | number,
 ): Array<IMovie> {
   const from = Number(offset);
   const to = from + Number(size);

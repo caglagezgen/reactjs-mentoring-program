@@ -24,7 +24,8 @@ export interface IMovie {
   description: string;
 }
 
-export const NO_IMAGE_PATH = '../assets/images/no image.jpg';
+export const NO_IMAGE_PATH = '/assets/images/no image.jpg';
+export const PAGE_NOT_FOUND_PATH = '/assets/images/404.jpg';
 
 export const EMPTY_MOVIE: IMovie = {
   title: '',
