@@ -78,7 +78,7 @@ const MovieDetailsModal: FC<IModal> = ({ onConfirmClick, onCancelClick, modalDet
                     hasError: touched.genre && errors.genre,
                   })}
                 />
-                {touched.genre && errors.genre && <p className={s.error}>{errors.genre}</p>}
+                {touched.genre && errors.genre && <p data-testid="genre" className={s.error}>{errors.genre}</p>}
               </label>
               <label htmlFor="description">
                 overview
@@ -95,7 +95,7 @@ const MovieDetailsModal: FC<IModal> = ({ onConfirmClick, onCancelClick, modalDet
                 />
                 {touched.description
                     && errors.description
-                    && <p className={s.error}>{errors.description}</p>}
+                    && <p data-testid="description" className={s.error}>{errors.description}</p>}
               </label>
               <FormField
                 text="runtime"

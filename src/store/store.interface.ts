@@ -6,19 +6,6 @@ import ISearchQueryParams from '@server/services/movies.service.interface';
 // TODO: add default redirect to the port 4100.
 export const API_URL = 'http://localhost:4100';
 
-export interface IState {
-  movies: Array<IMovie>;
-  search: {
-    genre: Genres,
-    offset: number,
-    orderBy: SortOrderBy,
-    size: number,
-    sortBy: IMovieSortOptions,
-    text: string,
-    chosenMovie: IMovie
-  };
-}
-
 export const DEFAULT_SEARCH_STATE = {
   genre: Genres.All,
   offset: 0,
@@ -28,6 +15,26 @@ export const DEFAULT_SEARCH_STATE = {
   text: '',
   chosenMovie: undefined as IMovie,
 };
+
+export const DEFAULT_STORE_STATE: IState = {
+  movies: [],
+  search: DEFAULT_SEARCH_STATE,
+};
+
+export interface ISearch {
+  genre: Genres,
+  offset: number,
+  orderBy: SortOrderBy,
+  size: number,
+  sortBy: IMovieSortOptions,
+  text: string,
+  chosenMovie: IMovie
+}
+
+export interface IState {
+  movies: Array<IMovie>;
+  search: ISearch;
+}
 
 export enum StoreModule {
   movies = 'movies',

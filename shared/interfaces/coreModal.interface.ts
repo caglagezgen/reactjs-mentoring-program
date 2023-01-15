@@ -9,7 +9,7 @@ export enum ModalType {
 }
 
 export interface IModal {
-  onConfirmClick: (movie?: IMovie) => void;
-  onCancelClick: () => void;
+  onConfirmClick?: (movie?: IMovie) => void;
+  onCancelClick?: () => void;
   modalDetails?: IModalContext;
 }
