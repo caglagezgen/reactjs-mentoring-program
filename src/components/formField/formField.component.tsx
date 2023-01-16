@@ -25,7 +25,7 @@ const FormField: FC<IFormField> = ({
           hasError: touched && error,
         })}
       />
-      {touched && error && <p className={s.error}>{error}</p>}
+      {touched && error && <p data-testid={name} className={s.error}>{error}</p>}
     </label>
   );
 };
